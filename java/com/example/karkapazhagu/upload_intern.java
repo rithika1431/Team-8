@@ -7,8 +7,7 @@ public class upload_intern {
     public String url;
 
 
-    // Default constructor required for calls to
-    // DataSnapshot.getValue(User.class)
+    
     public upload_intern() {
     }
 
