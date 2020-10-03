@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#E1DCE3"
+    android:layout_height="match_parent"
+    tools:context=".Cse">
+
+
+    <ImageView
+        android:id="@+id/department"
+        android:layout_width="432dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="472dp"
+        android:src="@drawable/ece2"
+        android:textColor="#F5F0F6"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout2" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="371dp"
+        android:layout_height="435dp"
+        android:layout_marginTop="8dp"
+        android:background="#E6F8F7FA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/department"
+        app:layout_constraintVertical_bias="0.096"></ListView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
