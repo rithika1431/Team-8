@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.karkapazhagu">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Upload_course" />
+        <activity android:name=".upload_internship" />
+        <activity android:name=".It_layout" />
+        <activity android:name=".Mech_layout" />
+        <activity android:name=".Civil_layout" />
+        <activity android:name=".Eee_layout" />
+        <activity android:name=".Ece_layout" />
+        <activity android:name=".Cse_layout" />
+        <activity android:name=".Courses" />
+        <activity android:name=".Internships" />
+        <activity android:name=".Mechsem8" />
+        <activity android:name=".Mechsem7" />
+        <activity android:name=".Mechsem6" />
+        <activity android:name=".Mechsem5" />
+        <activity android:name=".Mechsem4" />
+        <activity android:name=".Mechsem3" />
+        <activity android:name=".Mechsem2" />
+        <activity android:name=".Civilsem8" />
+        <activity android:name=".Civilsem7" />
+        <activity android:name=".Civilsem6" />
+        <activity android:name=".Civilsem5" />
+        <activity android:name=".Civilsem4" />
+        <activity android:name=".Civilsem3" />
+        <activity android:name=".Civilsem2" />
+        <activity android:name=".Eeesem8" />
+        <activity android:name=".Eeesem7" />
+        <activity android:name=".Eeesem6" />
+        <activity android:name=".Eeesem5" />
+        <activity android:name=".Eeesem4" />
+        <activity android:name=".Eeesem3" />
+        <activity android:name=".Eeesem2" />
+        <activity android:name=".Itsem8" />
+        <activity android:name=".Itsem7" />
+        <activity android:name=".Itsem6" />
+        <activity android:name=".Itsem5" />
+        <activity android:name=".Itsem4" />
+        <activity android:name=".Itsem3" />
+        <activity android:name=".Itsem2" />
+        <activity android:name=".Extra_activities" />
+        <activity android:name=".Ecesem8" />
+        <activity android:name=".Ecesem7" />
+        <activity android:name=".Ecesem6" />
+        <activity android:name=".Ecesem5" />
+        <activity android:name=".Ecesem4" />
+        <activity android:name=".Ecesem3" />
+        <activity android:name=".Ecesem2" />
+        <activity android:name=".Mech" />
+        <activity android:name=".Eee" />
+        <activity android:name=".It" />
+        <activity android:name=".Civil" />
+        <activity android:name=".Ece" />
+        <activity android:name=".Upload_Extra_Activities" />
+        <activity android:name=".Csesem8" />
+        <activity android:name=".Csesem7" />
+        <activity android:name=".Csesem6" />
+        <activity android:name=".Csesem5" />
+        <activity android:name=".Csesem4" />
+        <activity android:name=".Csesem3" />
+        <activity android:name=".Csesem2" />
+        <activity android:name=".pop_up_cse_sem1_sub6" />
+        <activity android:name=".pop_up_cse_sem1_sub5" />
+        <activity android:name=".pop_up_cse_sem1_sub4" />
+        <activity android:name=".pop_up_cse_sem1_sub3" />
+        <activity android:name=".pop_up_cse_sem1_sub2" />
+        <activity android:name=".pop_up_cse_sem1_sub1" />
+        <activity android:name=".Csesem1sub6" />
+        <activity android:name=".Csesem1sub5" />
+        <activity android:name=".Csesem1sub4" />
+        <activity android:name=".Csesem1sub3" />
+        <activity android:name=".csesem1sub2" />
+        <activity android:name=".Csesem1sub1" />
+        <activity android:name=".Csesem1" />
+        <activity
+            android:name=".Cse"
+            android:label="@string/title_activity_cse"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Register" />
+    </application>
+
+</manifest>
