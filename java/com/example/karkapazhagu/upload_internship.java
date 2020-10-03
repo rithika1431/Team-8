@@ -37,10 +37,10 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 
 public class upload_internship extends AppCompatActivity implements View.OnClickListener {
-    //constant to track image chooser intent
+   
     private static final int PICK_IMAGE_REQUEST = 234;
 
-    //view objects
+  
     private Button buttonChoose;
     private Button buttonUpload;
     private EditText editTextName;
@@ -48,10 +48,10 @@ public class upload_internship extends AppCompatActivity implements View.OnClick
     private TextView textViewShow;
     private ImageView imageView;
 
-    //uri to store file
+   
     private Uri filePath;
 
-    //firebase objects
+  
     private StorageReference storageReference;
     private DatabaseReference mDatabase;
 
@@ -116,9 +116,9 @@ public class upload_internship extends AppCompatActivity implements View.OnClick
     }
 
     private void uploadFile() {
-        //checking if file is available
+       
         if (filePath != null) {
-            //displaying progress dialog while image is uploading
+            
             final ProgressDialog progressDialog = new ProgressDialog(this);
             progressDialog.setTitle("Uploading");
             progressDialog.show();
@@ -151,13 +151,13 @@ public class upload_internship extends AppCompatActivity implements View.OnClick
                     .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
-                            //displaying the upload progress
+                           
                             double progress = (100.0 * taskSnapshot.getBytesTransferred()) / taskSnapshot.getTotalByteCount();
                             progressDialog.setMessage("Uploaded " + ((int) progress) + "%...");
                         }
                     });
         } else {
-            //display an error if no file is selected
+           
         }
     }
 
