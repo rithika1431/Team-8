@@ -79,7 +79,7 @@ public class Register extends AppCompatActivity {
 
 
 
-                //register the user in firebase
+               
 
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
