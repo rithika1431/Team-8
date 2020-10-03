@@ -20,19 +20,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Internships extends AppCompatActivity {
-    //recyclerview object
+    
     private RecyclerView recyclerView;
 
-    //adapter object
+   
     private RecyclerView.Adapter adapter;
 
-    //database reference
+   
     private DatabaseReference mDatabase;
 
-    //progress dialog
+    
     private ProgressDialog progressDialog;
 
-    //list to hold all the uploaded images
+   
     private List<upload_intern> uploads1;
     public class Constantss
     {
@@ -56,27 +56,27 @@ public class Internships extends AppCompatActivity {
 
         uploads1 = new ArrayList<>();
 
-        //displaying progress dialog while fetching images
+       
         progressDialog.setMessage("Please wait...");
         progressDialog.show();
         mDatabase = FirebaseDatabase.getInstance().getReference(Constantss.DATABASE_PATH_UPLOADS);
 
-        //adding an event listener to fetch values
+       
         mDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                //dismissing the progress dialog
+                
                 progressDialog.dismiss();
 
-                //iterating through all the values in database
+               
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
                     upload_intern upload = postSnapshot.getValue(upload_intern.class);
                     uploads1.add(upload);
                 }
-                //creating adapter
+               
                 adapter = new My_intern(getApplicationContext(), uploads1);
 
-                //adding adapter to recyclerview
+                
                 recyclerView.setAdapter(adapter);
             }
 
